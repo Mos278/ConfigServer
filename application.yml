@@ -1,4 +1,25 @@
+spring:
+  cloud:
+    config:
+      server:
+        vault:
+          enabled: true
+    vault:
+      kv:
+        enabled: true
+        application-name: vault
+      authentication: TOKEN
+      token: hvs.OnVHYGu1mPHz3wJ4J9qCFbfQ #Token User
+      scheme: http
+      host: 127.0.0.1
+      port: 8200
+      connection-timeout: 5000
+      read-timeout: 15000
+
+
+
 ex-profile:
   value1: 4
   value2: 5
   value3: 3
+
